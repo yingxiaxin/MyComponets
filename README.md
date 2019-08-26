@@ -52,6 +52,7 @@
 
 # package.json命令解释
 
+```
 "build:umd": 以umd方式打包组件库
 "build:commonjs": 以commonjs方式打包组件库
 "build:es": 以es方式打包组件库
@@ -60,3 +61,4 @@
 "start": 启动预览工程
 "build:prod": 编译预览工程
 "deploy:docs": 编译预览工程，并且将页面发布的github的gitpages
+```
