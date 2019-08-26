@@ -9,10 +9,10 @@
         "build:commonjs": "rimraf lib && cross-env BABEL_ENV=commonjs babel components -d lib --source-map",
         "build:es": "rimraf es && cross-env BABEL_ENV=es babel components -d es --source-map",
         "build:css": "cd scripts && gulp compile",
-        "build:all": "yarn build:umd && yarn build:commonjs && yarn build:es && yarn build:css",
+        "build:all": "npm run build:umd && npm run build:commonjs && npm run build:es && npm run build:css",
         "start": "cross-env BABEL_ENV=preview webpack-dev-server --port 7007 --open --config scripts/webpack.config.dev.js",
         "build:prod": "cross-env BABEL_ENV=preview webpack --mode production --config scripts/webpack.config.prod.js --source-map",
-        "deploy:docs": "yarn build:prod && gh-pages -d docs"
+        "deploy:docs": "npm run build:prod && gh-pages -d docs"
     },
     "repository": {
         "type": "git",
